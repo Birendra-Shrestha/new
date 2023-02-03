@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawesome cdn link version 5 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Title of the page -->
+    <link rel="stylesheet" href="index.html">
+    <title>signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+
+
+        }
+
+        .sigup-box {
+            box-shadow: 1px 1px 5px black;
+            background-color: aliceblue;
+            border-radius: 3px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        h4 {
+            text-align: center;
+
+        }
+
+        form {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        form label {
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid black;
+            border-radius: 1px;
+        }
+
+        form select {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid black;
+            border-radius: 1px;
+        }
+
+        .btn {
+            font-size: 20px;
+            width: 320px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .agree {
+            margin-top: 20px;
+            position: relative;
+
+        }
+
+        .agree input {
+            display: inline;
+            font-size: 10px;
+            position: absolute;
+            right: 140px;
+        }
+
+        .text {
+            font-size: 12px;
+            margin-left: 30px;
+        }
+
+        .agree a {
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div class="sigup-box">
+            <h1>Create Your Splunk Account</h1>
+            <h4> Already have a Splunk account?<a href="#">Login?</a></h4>
+            <form>
+                <label for="email"></label>
+                <input type="email" placeholder="Business Email">
+                <label for="password"></label>
+                <input type="password" placeholder="Password">
+                <label for="firstname"></label>
+                <input type="text" placeholder="First Name">
+                <label for="lastname"></label>
+                <input type="text" placeholder="Last Name">
+                <label for="jobtitle"></label>
+                <input type="text" placeholder="Job Titlel">
+                <label for="phone"></label>
+                <input type="text" placeholder="Phone Number ">
+                <label for="company"></label>
+                <input type="text" placeholder="Compnay">
+
+                <label for="country"></label>
+                <select name="country" id="countries">
+                    <option value="nepal">Nepal</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="pakistan">Pakistan</option>
+                </select>
+
+                <label for="postal"> </label>
+                <input type="postal" placeholder="Zip/Postal Code">
+
+                <br>
+                <div class="agree">
+                    <input type="checkbox" name="" value="">
+                    <div class="text">
+                        <p>I agree to the Splunk Website <a href="#">Terms & Conditions of Use, Splunk Privacy Policy
+                                and Splunk General
+                                Terms.</a></p>
+
+                    </div>
+
+
+
+                </div>
+                <button class="btn">Create Your Account</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
